@@ -1,0 +1,302 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>
+    ClickPoint
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .hover-grow:hover {
+      transform: scale(1.05);
+    }
+
+    .transition-transform {
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">
+        ClickPoint
+      </h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li>
+            <a class="hover:text-gray-200" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-200" href="#">
+              Features
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-200" href="#">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-200" href="#">
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-gray-200" href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10">
+    <!-- Features Section -->
+    <section class="mb-10">
+      <h2 class="text-3xl font-bold mb-6 text-center">
+        Features
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
+          href="http://cbf6-102-6-25-87.ngrok-free.app/templates/weather/index.html">
+          <i class="fas fa-cloud-sun text-4xl text-blue-500 mb-4">
+          </i>
+          <h3 class="text-xl font-semibold mb-2">
+            Weather Feature
+          </h3>
+          <p class="text-gray-600">
+            Get the latest weather updates for your location.
+          </p>
+        </a>
+        <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
+          href="http://cbf6-102-6-25-87.ngrok-free.app/templates/nearyou/index.html">
+          <i class="fas fa-map-marker-alt text-4xl text-red-500 mb-4">
+          </i>
+          <h3 class="text-xl font-semibold mb-2">
+            Location Feature
+          </h3>
+          <p class="text-gray-600">
+            Find your current location and nearby places.
+          </p>
+        </a>
+        <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
+          href="http://cbf6-102-6-25-87.ngrok-free.app/templates/camera_temp/index.html">
+          <i class="fas fa-camera text-4xl text-green-500 mb-4">
+          </i>
+          <h3 class="text-xl font-semibold mb-2">
+            Camera Feature
+          </h3>
+          <p class="text-gray-600">
+            Capture moments with our integrated camera feature.
+          </p>
+        </a>
+        <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
+          href="http://cbf6-102-6-25-87.ngrok-free.app/templates/microphone/index.html">
+          <i class="fas fa-microphone text-4xl text-purple-500 mb-4">
+          </i>
+          <h3 class="text-xl font-semibold mb-2">
+            Microphone Feature
+          </h3>
+          <p class="text-gray-600">
+            Record audio with our high-quality microphone feature.
+          </p>
+        </a>
+      </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-10 rounded-lg shadow-lg mb-10">
+      <h2 class="text-3xl font-bold mb-6 text-center">
+        Pricing
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white text-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <h3 class="text-xl font-semibold mb-4">
+            Basic Plan
+          </h3>
+          <p class="text-4xl font-bold mb-4">
+            $9.99
+          </p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">
+              Access to basic features
+            </li>
+            <li class="mb-2">
+              Email support
+            </li>
+            <li class="mb-2">
+              10GB storage
+            </li>
+          </ul>
+          <a class="bg-blue-500 text-white px-4 py-2 rounded" href="#">
+            Choose Plan
+          </a>
+        </div>
+        <div class="bg-white text-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <h3 class="text-xl font-semibold mb-4">
+            Standard Plan
+          </h3>
+          <p class="text-4xl font-bold mb-4">
+            $19.99
+          </p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">
+              Access to all features
+            </li>
+            <li class="mb-2">
+              Priority email support
+            </li>
+            <li class="mb-2">
+              50GB storage
+            </li>
+            <li class="mb-2">
+              Customizable themes
+            </li>
+          </ul>
+          <a class="bg-blue-500 text-white px-4 py-2 rounded" href="#">
+            Choose Plan
+          </a>
+        </div>
+        <div class="bg-white text-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <h3 class="text-xl font-semibold mb-4">
+            Premium Plan
+          </h3>
+          <p class="text-4xl font-bold mb-4">
+            $29.99
+          </p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">
+              All Standard Plan features
+            </li>
+            <li class="mb-2">
+              24/7 support
+            </li>
+            <li class="mb-2">
+              Unlimited storage
+            </li>
+            <li class="mb-2">
+              Advanced analytics
+            </li>
+            <li class="mb-2">
+              Dedicated account manager
+            </li>
+          </ul>
+          <a class="bg-blue-500 text-white px-4 py-2 rounded" href="#">
+            Choose Plan
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="mb-10">
+      <h2 class="text-3xl font-bold mb-6 text-center">
+        Gallery
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A beautiful sunset over a mountain range" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/eWhx44sjlAV1AKsAivLPzigdgBRumFWJy9JbWCmoMVLf9s0TA.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Sunset Over Mountains
+          </h3>
+          <p class="text-gray-600">
+            A breathtaking view of the sun setting over a mountain range.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A serene beach with crystal clear water" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/NPD3nmGjh7YWL1enRlTcggKEX9TYO8GKfz8rroUNfjFA8ZpnA.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Serene Beach
+          </h3>
+          <p class="text-gray-600">
+            A peaceful beach with crystal clear water and white sand.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A bustling cityscape at night" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/vtHLf21qPbyzLaHsSwFa3Dhi8O5pIZ9chl4QfXfy7YfE4zSPB.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Cityscape at Night
+          </h3>
+          <p class="text-gray-600">
+            A vibrant cityscape illuminated by lights at night.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A lush green forest with tall trees" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/DSfFsqyTNMSAfkztHagq0xcLogXFTDEaKB8XpgdoiF8EeZpnA.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Lush Green Forest
+          </h3>
+          <p class="text-gray-600">
+            A dense forest with tall trees and rich greenery.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A picturesque village in the countryside" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/eDItEYRtM9QXTyTefJbQGhJLRCZlSVjLP0CpluZQNwkF8ZpnA.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Countryside Village
+          </h3>
+          <p class="text-gray-600">
+            A charming village nestled in the countryside.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow">
+          <img alt="A majestic waterfall cascading down rocks" class="rounded mb-4" height="400"
+            src="https://storage.googleapis.com/a1aa/image/mXx4e3e3XZsibEwQZr4a6wTcwYyQGmyVxpKShO6ufesw3zSPB.jpg"
+            width="600" />
+          <h3 class="text-xl font-semibold mb-2">
+            Majestic Waterfall
+          </h3>
+          <p class="text-gray-600">
+            A stunning waterfall cascading down rocky cliffs.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow mt-10">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <p>
+        © 2023 ClickPoint. All rights reserved.
+      </p>
+      <div class="flex space-x-4">
+        <a class="hover:text-gray-200" href="#">
+          <i class="fab fa-facebook-f">
+          </i>
+        </a>
+        <a class="hover:text-gray-200" href="https://x.com/FredrickMureti">
+          <i class="fab fa-twitter">
+          </i>
+        </a>
+        <a class="hover:text-gray-200" href="https://www.linkedin.com/in/fredrick-mureti-95bb5423a/">
+          <i class="fab fa-linkedin-in">
+          </i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

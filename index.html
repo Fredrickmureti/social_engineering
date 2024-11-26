@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description"
+    content="ClickPoint offers innovative features for weather updates, location services, and more. Explore our plans today!">
+  <meta name="keywords" content="ClickPoint, weather, location, pricing, features, gallery">
+  <meta name="author" content="DevFredrick Mureti">
+  <link rel="icon" href="/images//star.png" type="image/png">
+
   <title>
     ClickPoint
   </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
   <style>
@@ -22,6 +27,21 @@
     .transition-transform {
       transition: transform 0.3s ease;
     }
+
+    /* For the mobile nav */
+    .mobile-nav {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+      }
+    }
   </style>
 </head>
 
@@ -33,48 +53,82 @@
         ClickPoint
       </h1>
       <nav>
-        <ul class="flex space-x-4">
-          <li>
-            <a class="hover:text-gray-200" href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="hover:text-gray-200" href="#">
-              Features
-            </a>
-          </li>
-          <li>
-            <a class="hover:text-gray-200" href="#">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a class="hover:text-gray-200" href="#">
-              Gallery
-            </a>
-          </li>
-          <li>
-            <a class="hover:text-gray-200" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <div class="desktop-nav">
+          <ul id="nav-links" class="flex space-x-4">
+            <li>
+              <a class="hover:text-gray-200" href="/">
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-200" href="#features">
+                Features
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-200" href="#pricing">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-200" href="#gallery">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-200" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-nav">
+          <button id="mobile-menu-button" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+          <ul id="mobile-nav-links"
+            class="hidden flex-col space-y-2 absolute bg-white text-gray-800 right-4 mt-2 rounded-lg shadow-lg p-4">
+            <li>
+              <a class="hover:text-gray-600" href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-600" href="#">
+                Features
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-600" href="#">
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-600" href="#">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a class="hover:text-gray-600" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
   <!-- Main Content -->
   <main class="container mx-auto px-4 py-10">
     <!-- Features Section -->
-    <section class="mb-10">
+    <section class="mb-10" id="features">
       <h2 class="text-3xl font-bold mb-6 text-center">
         Features
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
           href="http://cbf6-102-6-25-87.ngrok-free.app/templates/weather/index.html">
-          <i class="fas fa-cloud-sun text-4xl text-blue-500 mb-4">
-          </i>
+          <i class="fas fa-cloud-sun text-4xl text-blue-500 mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">
             Weather Feature
           </h3>
@@ -84,8 +138,7 @@
         </a>
         <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
           href="http://cbf6-102-6-25-87.ngrok-free.app/templates/nearyou/index.html">
-          <i class="fas fa-map-marker-alt text-4xl text-red-500 mb-4">
-          </i>
+          <i class="fas fa-map-marker-alt text-4xl text-red-500 mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">
             Location Feature
           </h3>
@@ -95,8 +148,7 @@
         </a>
         <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
           href="http://cbf6-102-6-25-87.ngrok-free.app/templates/camera_temp/index.html">
-          <i class="fas fa-camera text-4xl text-green-500 mb-4">
-          </i>
+          <i class="fas fa-camera text-4xl text-green-500 mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">
             Camera Feature
           </h3>
@@ -106,8 +158,7 @@
         </a>
         <a class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-transform hover-grow"
           href="http://cbf6-102-6-25-87.ngrok-free.app/templates/microphone/index.html">
-          <i class="fas fa-microphone text-4xl text-purple-500 mb-4">
-          </i>
+          <i class="fas fa-microphone text-4xl text-purple-500 mb-4"></i>
           <h3 class="text-xl font-semibold mb-2">
             Microphone Feature
           </h3>
@@ -118,7 +169,8 @@
       </div>
     </section>
     <!-- Pricing Section -->
-    <section class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-10 rounded-lg shadow-lg mb-10">
+    <section class="bg-gradient-to-r from-green-400 to-blue-500 text-white py-10 rounded-lg shadow-lg mb-10"
+      id="pricing">
       <h2 class="text-3xl font-bold mb-6 text-center">
         Pricing
       </h2>
@@ -201,7 +253,7 @@
       </div>
     </section>
     <!-- Gallery Section -->
-    <section class="mb-10">
+    <section class="mb-10" id="gallery">
       <h2 class="text-3xl font-bold mb-6 text-center">
         Gallery
       </h2>
@@ -274,6 +326,7 @@
         </div>
       </div>
     </section>
+
   </main>
   <!-- Footer -->
   <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow mt-10">
@@ -283,20 +336,25 @@
       </p>
       <div class="flex space-x-4">
         <a class="hover:text-gray-200" href="#">
-          <i class="fab fa-facebook-f">
-          </i>
+          <i class="fab fa-facebook-f"></i>
         </a>
         <a class="hover:text-gray-200" href="https://x.com/FredrickMureti">
-          <i class="fab fa-twitter">
-          </i>
+          <i class="fab fa-twitter"></i>
         </a>
         <a class="hover:text-gray-200" href="https://www.linkedin.com/in/fredrick-mureti-95bb5423a/">
-          <i class="fab fa-linkedin-in">
-          </i>
+          <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
     </div>
   </footer>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileNavLinks = document.getElementById('mobile-nav-links');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileNavLinks.classList.toggle('hidden');
+    });
+  </script>
 </body>
 
 </html>
